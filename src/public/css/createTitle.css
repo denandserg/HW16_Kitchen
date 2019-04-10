@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../img/paper.jpg") ;
+}
+p{
+    font-size: 22px;
+    color: #ffffff;
+}
+.create-dish{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.title-dish{
+    position: relative;
+}
+
+.title-dish input{
+    width: 700px;
+    padding: 10px 0;
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+}
+.title-dish label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 22px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.title-dish input:focus ~ label,
+.title-dish input:valid ~ label{
+    top: -14px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.dish-description{
+    width: 715px;
+    height: 200px;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.dish-button__btn{
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 160px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dish-button{
+    display: flex;
+    justify-content: center;
+}
+.dish-button-save{
+    width: 800px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.dish-button-save > .dish-button__btn{
+    width: 200px;
+}
+.ugly{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+.create-dish .label{
+    display: inline-block;
+    margin-top: 5px;
+    width: 100px;
+    color: #ffffff;
+    background: #03a9f4;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+

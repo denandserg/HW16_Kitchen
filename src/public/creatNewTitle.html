@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/createTitle.css">
+    <title>New Dish</title>
+</head>
+<body>
+<div class="create-dish">
+    <form id="data" method="post" enctype="multipart/form-data">
+    <div class="title-dish">
+        <input id="titleDish" type="text" required>
+        <label>Title dish</label>
+    </div>
+    <p>Description</p>
+    <textarea id="descriptionDish" class="dish-description"></textarea>
+        <input id="imgDish" class="ugly" type="file" name="image" accept="image/png,image/jpeg"/>
+        <label for="imgDish" class="label">Add Photo</label>
+    </form>
+</div>
+<div id="some">
+</div>
+
+<div id="moduleBtn" class="dish-button dish-button-save">
+    <button id="step" class="dish-button__btn">Add Step</button>
+    <button id="saveBtnDish" class="dish-button__btn">Save</button>
+</div>
+<script src="./js/createNewRecipe.js"></script>
+</body>
+</html>

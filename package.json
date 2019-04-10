@@ -1,0 +1,39 @@
+{
+  "name": "HW_16",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack --colors --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AlexeyV",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^1.1.6",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.1",
+    "lodash.merge": "^4.6.1",
+    "pg": "^7.5.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.39.0",
+    "serve-static": "^1.13.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "start-server-webpack-plugin": "^2.2.0",
+    "webpack": "^3.6.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
